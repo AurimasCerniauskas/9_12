@@ -1,0 +1,12 @@
+@import '../base/base.css';
+@import '../base/layout.css';
+@import '../3rd_party/font-awesome.min.css';
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progressbar.css';
+
+body{
+  background-color: olive;
+}
