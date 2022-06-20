@@ -4,15 +4,15 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-# Astronaut
+# Comming soon (responsive)
 
 _39 group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://aurimascerniauskas.github.io/5p_06-14/
+Site published at: https://aurimascerniauskas.github.io/9_12/
 
-Design: [Astronaut](https://cdn.dribbble.com/users/1355613/screenshots/5964475/space.gif)
+Design: [Comming soon](https://cdn.discordapp.com/attachments/850245533838868480/850246473362178048/coming-soon-wide.png)
 
 ## Project features
 
