@@ -7,3 +7,40 @@
 @import '../components/mouse.css';
 @import '../components/progressbar.css';
 
+.hero{
+  padding-bottom: 20px;
+}
+
+.hero > .row-short{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo{
+  width: 60px;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.main-title{
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.clock{
+  margin: 40px 0;
+}
+
+footer .container{
+  padding-top: 0;
+}
+
+
+@media (max-width: 500px){
+  .main-title{
+    font-size: 60px;
+  }
+}
