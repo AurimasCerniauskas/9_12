@@ -20,6 +20,7 @@ Design: [Comming soon](https://cdn.discordapp.com/attachments/850245533838868480
 -   `<style>` tag
 -   pseudo-element
 -   icons
+-   Responsive
 
 ## Authors
 
