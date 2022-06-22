@@ -64,8 +64,34 @@ section.container.bg-main{
   text-decoration: none;
   color: var(--secondary-color);
  }
+ .column-description > a:hover{
+  text-decoration: underline;
+ }
 /* Hero section end */
 
+ .socials{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 3px solid #fff;
+ }
+ .socials > a{
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+ }
+ .socials > a:hover{
+background-color: #fff;
+color: var(--main-color);
+ }
 footer.container{
   padding-top: 0;
 } 
