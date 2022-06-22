@@ -99,8 +99,44 @@ footer.container{
 footer .container{
   padding-top: 0;
 }
-
-
+.footer-logo{
+  margin: 40px 0;
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
+}
+.credits{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  color: #7DD7F9;
+}
+.credits > p{
+  position: relative;
+}
+.credits > p::after{
+  content: '';
+  width: 4px;
+  height: 16px;
+  display: inline-block;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  right: -17px;
+  transform: translate(-50%, -50%);
+}
+.credits > p:last-child::after{
+  display: none;
+}
+.credits > p > a{
+  color: #fff;
+}
+.bottom-text{
+ color: #7DD7F9;
+}
+.bottom-text > a{
+  color: #fff;
+}
 @media (max-width: 500px){
   .main-title{
     font-size: 60px;
