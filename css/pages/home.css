@@ -11,6 +11,9 @@
 .hero{
   padding-bottom: 20px;
 }
+section.container.bg-main{
+  padding-bottom: 20px;
+}
 
 .hero > .row-short{
   display: flex;
@@ -33,14 +36,126 @@
 .clock{
   margin: 40px 0;
 }
+/* hero section start */
+.main-content{
+  display: flex;
+  justify-content: space-between;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  background-color: pink;
+}
+.right-column{
+  width: 40%;
+  background-color: silver;
+}
+ .column-title{
+  text-transform: uppercase;
+  font-size: 18px;
+ }
+ .column-description{
+  font-size: 17px;
+  color: #777;
+ }
+ .column-description > a{
+  text-decoration: none;
+  color: var(--secondary-color);
+ }
+ .column-description > a:hover{
+  text-decoration: underline;
+ }
+/* Hero section end */
+
+ .socials{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 3px solid #fff;
+ }
+ .socials > a{
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+ }
+ .socials > a:hover{
+background-color: #fff;
+color: var(--main-color);
+ }
+footer.container{
+  padding-top: 0;
+} 
 
 footer .container{
   padding-top: 0;
 }
-
-
+.footer-logo{
+  margin: 40px 0;
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
+}
+.credits{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  color: #7DD7F9;
+}
+.credits > p{
+  position: relative;
+}
+.credits > p::after{
+  content: '';
+  width: 4px;
+  height: 16px;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -17px;
+  transform: translate(-50%, -50%);
+}
+.credits > p:last-child::after{
+  display: none;
+}
+.credits > p > a{
+  color: #fff;
+}
+.bottom-text{
+ color: #7DD7F9;
+}
+.bottom-text > a{
+  color: #fff;
+}
 @media (max-width: 500px){
   .main-title{
     font-size: 60px;
+  }
+}
+
+@media (max-width: 700px){
+  .main-content{
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .main-content > *{
+    width: 100%;
+  }
+  .credits{
+    flex-direction: column;
+    align-items: center;
+  }
+  .credits > p::after{
+    display: none;
   }
 }
