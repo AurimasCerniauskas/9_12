@@ -46,11 +46,11 @@ section.container.bg-main{
   flex-direction: column;
   gap: 30px;
   width: 50%;
-  background-color: pink;
+
 }
 .right-column{
   width: 40%;
-  background-color: silver;
+
 }
  .column-title{
   text-transform: uppercase;
