@@ -25,6 +25,7 @@ section.container.bg-main{
   flex-direction: column;
   text-align: center;
   gap: 20px;
+  align-items: center;
 }
 
 .logo{
