@@ -2,13 +2,19 @@
 @import '../base/layout.css';
 @import '../3rd_party/font-awesome.min.css';
 @import '../components/button.css';
-@import '../components/clock.css';
+/* @import '../components/clock-flex.css'; */
+@import '../components/clock-grid.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progressbar.css';
 
+/* hero section - start */
 .hero{
   padding-bottom: 20px;
+  background-image: url(../../img/header_bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 section.container.bg-main{
   padding-bottom: 20px;
@@ -18,13 +24,12 @@ section.container.bg-main{
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
   gap: 20px;
 }
 
 .logo{
-  width: 60px;
-  height: 100%;
+  width: 100%;
+  height: 60px;
   object-fit: contain;
   margin-bottom: 20px;
 }
@@ -64,17 +69,78 @@ section.container.bg-main{
   text-decoration: none;
   color: var(--secondary-color);
  }
+ .column-description > a:hover{
+  text-decoration: underline;
+ }
 /* Hero section end */
 
+ .socials{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 3px solid #fff;
+ }
+ .socials > a{
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+ }
+ .socials > a:hover{
+background-color: #fff;
+color: var(--main-color);
+ }
 footer.container{
   padding-top: 0;
+  text-align: center;
+  line-height: 1.6em;
 } 
 
-footer .container{
-  padding-top: 0;
+.footer-logo{
+  margin: 40px 0;
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
 }
-
-
+.credits{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  color: #fff8;
+}
+.credits > p{
+  position: relative;
+}
+.credits > p::after{
+  content: '';
+  width: 3px;
+  height: 16px;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -17px;
+  transform: translate(-50%, -50%);
+}
+.credits > p:last-child::after{
+  display: none;
+}
+.credits > p > a{
+  color: #fff;
+}
+.bottom-text{
+ color: #fff8;
+}
+.bottom-text > a{
+  color: #fff;
+}
 @media (max-width: 500px){
   .main-title{
     font-size: 60px;
@@ -88,5 +154,12 @@ footer .container{
   }
   .main-content > *{
     width: 100%;
+  }
+  .credits{
+    flex-direction: column;
+    align-items: center;
+  }
+  .credits > p::after{
+    display: none;
   }
 }
