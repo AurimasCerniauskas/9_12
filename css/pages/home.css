@@ -8,8 +8,13 @@
 @import '../components/mouse.css';
 @import '../components/progressbar.css';
 
+/* hero section - start */
 .hero{
   padding-bottom: 20px;
+  background-image: url(../../img/header_bg.png);
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 section.container.bg-main{
   padding-bottom: 20px;
@@ -46,11 +51,11 @@ section.container.bg-main{
   flex-direction: column;
   gap: 30px;
   width: 50%;
-  background-color: pink;
+
 }
 .right-column{
   width: 40%;
-  background-color: silver;
+
 }
  .column-title{
   text-transform: uppercase;
@@ -94,11 +99,10 @@ color: var(--main-color);
  }
 footer.container{
   padding-top: 0;
+  text-align: center;
+  line-height: 1.6em;
 } 
 
-footer .container{
-  padding-top: 0;
-}
 .footer-logo{
   margin: 40px 0;
   height: 50px;
@@ -109,14 +113,14 @@ footer .container{
   display: flex;
   gap: 30px;
   justify-content: center;
-  color: #7DD7F9;
+  color: #fff8;
 }
 .credits > p{
   position: relative;
 }
 .credits > p::after{
   content: '';
-  width: 4px;
+  width: 3px;
   height: 16px;
   display: inline-block;
   background-color: #fff;
@@ -132,7 +136,7 @@ footer .container{
   color: #fff;
 }
 .bottom-text{
- color: #7DD7F9;
+ color: #fff8;
 }
 .bottom-text > a{
   color: #fff;
