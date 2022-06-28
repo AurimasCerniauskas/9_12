@@ -112,7 +112,7 @@ footer.container{
 }
 .credits{
   display: flex;
-  gap: 30px;
+  gap: 0 30px;
   justify-content: center;
   color: #fff8;
 }
@@ -123,12 +123,12 @@ footer.container{
   content: '';
   width: 3px;
   height: 16px;
-  display: inline-block;
+  display: block;
   background-color: #fff;
   position: absolute;
   top: 50%;
-  right: -17px;
-  transform: translate(-50%, -50%);
+  right: -15px;
+  transform: translate(50%, -50%);
 }
 .credits > p:last-child::after{
   display: none;
