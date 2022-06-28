@@ -21,6 +21,7 @@ Design: [Comming soon](https://cdn.discordapp.com/attachments/850245533838868480
 -   pseudo-element
 -   icons
 -   Responsive
+-   Animation
 
 ## Authors
 
