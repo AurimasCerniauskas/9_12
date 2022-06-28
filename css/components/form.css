@@ -1,0 +1,41 @@
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form > input,
+.form > textarea{
+  color: #3333;
+  line-height: 1.2em;
+  padding: 0.4me 0;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #777;
+  font-family: inherit;
+  width: 100%;
+}
+
+.form > textarea{
+  grid-column: span 2;
+}
+.form > button{
+  justify-self: end;
+  grid-column: span 2;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 0.8em 1.2em;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.2em;
+}
+
+@media (max-width:900px){
+  .form{
+    grid-template-columns: 1fr;
+  }
+  .form > button,
+  .form > textarea{
+    grid-column: span 1;
+  }
+}
