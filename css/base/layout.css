@@ -39,7 +39,8 @@
 
 
 @media (max-width: 440px){
-  .container > .row{
+  .container > .row,
+  .container > .row-short{
     width: 100%;
     margin: 0;
     padding-left: 20px;
