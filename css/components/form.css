@@ -1,0 +1,65 @@
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form > input,
+.form > textarea{
+  color: #3333;
+  line-height: 1.2em;
+  padding: 0.4em 0;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #777;
+  font-family: inherit;
+  width: 100%;
+}
+
+.form > textarea{
+  grid-column: span 2;
+}
+.form > button{
+  justify-self: end;
+  grid-column: span 2;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 0.8em 1.2em;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.2em;
+}
+.form-subsc{
+  width: 80%;
+  
+}
+.form-subsc > input::placeholder{
+  color: #fff8;
+}
+.form-subsc > input{
+  grid-column: 1 / 3;
+  background-color: transparent;
+  border-bottom: 2px solid #fff8;
+}
+.form-subsc > button{
+  grid-column: 1 / 3;
+  justify-self: center;
+  margin: 20px 0;
+  padding: 0.8em 2em;
+}
+
+
+@media (max-width:900px){
+  .form{
+    grid-template-columns: 1fr;
+  }
+  .form > button,
+  .form > textarea{
+    grid-column: span 1;
+  }
+  .form-subsc{
+    width: 100%;
+    gap: 20px 0;
+  }
+
+}

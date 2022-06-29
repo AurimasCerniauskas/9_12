@@ -22,4 +22,16 @@
   height: 100%;
   width: 90%;
   background-color: var(--main-color);
+  animation-name: loading;
+  animation-duration: 1s;
+}
+
+@keyframes loading{
+  0%{
+    transform: translateX(-100%);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
 }
